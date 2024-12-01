@@ -7,6 +7,7 @@ import (
 	"math/rand"
 	"net/http"
 	"strconv"
+
 	"github.com/gorilla/mux"
 )
 
@@ -23,7 +24,6 @@ type Director struct {
 }
 
 var movies []Movie
-
 
 func getMovies(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
@@ -78,6 +78,12 @@ func updateMovie(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func checkHealth(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+    w.Write([]byte(`"ok"`))
+}
+
 func main() {
 	r := mux.NewRouter()
 
@@ -89,9 +95,7 @@ func main() {
 	r.HandleFunc("/movies", createMovie).Methods("POST")
 	r.HandleFunc("/movies/{id}", updateMovie).Methods("PUT")
 	r.HandleFunc("/movies/{id}", deleteMovie).Methods("DELETE")
-
-	var a[3]int
-	fmt.Println(a)
+	r.HandleFunc("/health", checkHealth).Methods("GET")
 
 	fmt.Printf("Starting server at port 8000\n")
 	log.Fatal(http.ListenAndServe(":8000", r))
