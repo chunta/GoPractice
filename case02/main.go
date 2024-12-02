@@ -11,10 +11,12 @@ const inflationRate = 2.5
 
 func main() {
 	
+	presentEcho()
+	
 	var investmentAmount float64 = 1000
 
 	fmt.Print("input:")
-	fmt.Scan(&investmentAmount)
+	_, _ = fmt.Scan(&investmentAmount)
 
 	years, expectedReturnRate := 10.0, 5.5
 	futureValue := investmentAmount * math.Pow(1+expectedReturnRate/100, years)
@@ -24,7 +26,8 @@ func main() {
 	fmt.Println(futureRealValue)
 
 	var choice int64 = 0
-	fmt.Scan(&choice)
+	_, _ = fmt.Scan(&choice)
+
 	switch choice {
 	case 1:
 		fmt.Println("MAKE 1M")
