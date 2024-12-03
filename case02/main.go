@@ -1,18 +1,18 @@
 package main
 
 import (
-	"fmt"
-	"math"
 	"case02/fileops"
-	 "github.com/Pallinder/go-randomdata"
+	"fmt"
+	"github.com/Pallinder/go-randomdata"
+	"math"
 )
 
 const inflationRate = 2.5
 
 func main() {
-	
+
 	presentEcho()
-	
+
 	var investmentAmount float64 = 1000
 
 	fmt.Print("input:")
@@ -47,4 +47,3 @@ func main() {
 	fmt.Printf("content: %s\n", stringContent)
 	fmt.Println(randomdata.SillyName())
 }
-

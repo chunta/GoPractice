@@ -2,9 +2,9 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"sync"
-	"fmt"
 )
 
 type Item struct {
@@ -26,7 +26,7 @@ func createItem(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Invalid input", http.StatusBadRequest)
 		return
 	}
-	
+
 	println(len(newItem.ID))
 
 	mu.Lock()

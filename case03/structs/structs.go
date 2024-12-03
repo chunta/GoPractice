@@ -35,8 +35,8 @@ func (user *User) EmptyUser() {
 }
 
 func (user *User) EchoUser() {
-	fmt.Printf("firstName: %s,\nlastName: %s,\nupdate: %v)\n\n", 
-	user.FirstName, 
-	user.LastName,  
-	user.UpdateAt)
+	fmt.Printf("firstName: %s,\nlastName: %s,\nupdate: %v)\n\n",
+		user.FirstName,
+		user.LastName,
+		user.UpdateAt)
 }

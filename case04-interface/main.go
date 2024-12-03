@@ -16,9 +16,8 @@ type Circle struct {
 func (c Circle) GetArea() float64 {
 	return c.Radius * c.Radius * 3.1416
 }
- 
 
-func add[T int|float64](a, b T) T {
+func add[T int | float64](a, b T) T {
 	return a + b
 }
 
