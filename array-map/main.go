@@ -31,10 +31,10 @@ func main() {
 	// Slice and Copy array
 	original := []int{1, 2, 3, 4, 5}
 	copySlice := make([]int, len(original)) 
-	copy(original, copySlice)
-	fmt.Println(copySlice)
-	for value := range copySlice {
-		fmt.Println(value)
+	copy(copySlice, original)
+	fmt.Println("copySlices:", copySlice)
+	for index, value := range copySlice {
+		fmt.Println(index, value)
 	}
 
 	// Map
