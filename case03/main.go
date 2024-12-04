@@ -31,7 +31,7 @@ func main() {
 		Content:   "0123",
 	}
 	fmt.Println(newNote)
-	
+
 	saveErr := newNote.Save()
 	if saveErr != nil {
 		fmt.Println("save failure")

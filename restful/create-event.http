@@ -1,0 +1,7 @@
+POST http://localhost:8110/events
+content-type: application/json
+
+{
+    "Name": "new name",
+    "Des": "Description"
+}
