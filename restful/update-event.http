@@ -1,0 +1,7 @@
+PUT http://localhost:8110/event/1
+Content-Type: application/json
+
+{
+  "Name": "Leap Event Name",
+  "Des": "This is the updated description of the event."
+}
