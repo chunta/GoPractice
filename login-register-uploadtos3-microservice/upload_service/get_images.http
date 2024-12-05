@@ -1,0 +1,4 @@
+### Get images by userId
+GET http://localhost:81/images
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMzNDExNTU2LCJ1c2VySWQiOjF9.3wH542d2Thn_-omXTP1qJl1FhWSltDxxtUpbKqXdgYI
+Accept: application/json

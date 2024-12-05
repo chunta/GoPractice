@@ -1,0 +1,11 @@
+### Upload a file to the server
+POST http://localhost:81/image
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMzNDExNTU2LCJ1c2VySWQiOjF9.3wH542d2Thn_-omXTP1qJl1FhWSltDxxtUpbKqXdgYI
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="file"; filename="second.png"
+Content-Type: image/png
+
+< ./merlin_red.png
+--boundary123--

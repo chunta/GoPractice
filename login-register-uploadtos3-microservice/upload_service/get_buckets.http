@@ -1,0 +1,4 @@
+# Get User Info by ID
+GET http://localhost:81/buckets HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMzMzkwMjE0LCJ1c2VySWQiOjF9.3ChUSChKevexBtOxmCgER96NryZnEDcIijaq3HqlUx8
+Content-Type: application/jsoncd
